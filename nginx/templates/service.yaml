@@ -8,5 +8,5 @@ spec:
         purpose: helm
     ports:    
     - protocols: TCP  
-        port: 80 #service-port
-        targetport: {{ .Values.configmap.port }} #target-port
+    port: 80 #service-port
+    targetport: {{ .Values.configmap.port }} #target-port
