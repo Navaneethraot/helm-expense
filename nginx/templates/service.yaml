@@ -7,8 +7,8 @@ spec:
     selector:
         app: nginix
         purpose: helm
-ports:    
-- protocols: TCP 
+    ports:    
+    - protocols: TCP 
     port: 80 #service-port  
     targetport: {{ .Values.configmap.port }} #target-port 
     nodePort: {{ .Values.service.nodeport }}
