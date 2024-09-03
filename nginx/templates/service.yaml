@@ -7,6 +7,7 @@ spec:
         app: nginix
         purpose: helm
     ports:    
-    - protocols: TCP  
-    port: 80 #service-port
-    targetport: {{ .Values.configmap.port }} #target-port
+    - protocols: TCP 
+      port: 80 #service-port  
+      targetport: {{ .Values.configmap.port }} #target-port 
+        
