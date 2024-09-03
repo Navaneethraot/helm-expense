@@ -3,9 +3,10 @@ kind: service
 metadata:
   name: nginx-service
 spec:
-selector:
-    app: nginix
-    purpose: helm
-  - protocols: TCP  
-    port: 80 #service-port
-    targetport: {{ .Values.configmap.port }} #target-port
+    selector:
+        app: nginix
+        purpose: helm
+    ports:    
+    - protocols: TCP  
+        port: 80 #service-port
+        targetport: {{ .Values.configmap.port }} #target-port
