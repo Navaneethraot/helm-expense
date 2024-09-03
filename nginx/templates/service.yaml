@@ -5,7 +5,7 @@ metadata:
 spec:
 selector:
     app: nginx
-    purpose: helm
+    purpose : helm
   - protocols: TCP  
     port: 80 #service-port
     targetport: {{ .Values.configmap.port }} #target-port
